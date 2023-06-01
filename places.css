@@ -1,0 +1,62 @@
+body {
+     background:linear-gradient(30deg, rgb(77,77,77), rgb(58, 58, 58));
+     color: rgb(68, 68, 68);
+     /* body 에 color 속성을 넣을 때는 shared.css and 현재 적용하려는 css에 지정된 컬러가 없어야 body 속성을 넣을 수 있음 bc 부모요소 즉 상속되는 요소이기 때문 */
+}
+
+header{
+    position: static;
+}
+ 
+main ul{
+    width: 800px;
+    margin:0 auto;
+}
+
+main li{
+     display: flex;
+     background-color: white;
+     box-shadow: 1px 1px 4px rgb(0, 0, 0, 0.2);
+     border-radius: 6px;
+     overflow: hidden;
+     /* margin-right: 200px; 
+    */
+   
+     /* oevrflow :이미지와 text 나란히 있을때 둘 다 에게 값을 줬지만 이미자가 컨테이너(li) 를 벗어났기 때문에 hidden 을 적용 -같이 동일한 효과를 받음*/
+     
+}
+main li img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+} 
+
+.item-content{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+/* .item-content p{
+    padding-bottom: 80px;
+} */
+.actions {
+    text-align: right;
+   
+}
+.actions a{
+    text-decoration: none;
+    color: rgb(79, 209, 213);
+    padding: 6px;
+    border-radius: 5px;
+    /* padding-top: 200px; */
+
+
+}
+.actions a:hover{
+   color: rgb(79, 209, 213);
+   background-color: rgb(233, 252, 252);
+   /* padding: 4px 4px; */
+}
