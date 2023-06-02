@@ -3,9 +3,21 @@ body {
      color: rgb(68, 68, 68);
      /* body 에 color 속성을 넣을 때는 shared.css and 현재 적용하려는 css에 지정된 컬러가 없어야 body 속성을 넣을 수 있음 bc 부모요소 즉 상속되는 요소이기 때문 */
 }
+#page-logo a{
+    color: rgb(183, 230, 235);
 
+}
 header{
     position: static;
+}
+
+header a {
+    color: rgb(183, 230, 235);
+
+}
+header nav a:hover{
+    background-color: rgb(183, 230, 235);
+    color: rgb(59, 59, 59);
 }
  
 main ul{
@@ -43,6 +55,10 @@ main li img{
     flex-direction: column;
     justify-content: space-between;
     
+}
+.item-content h2{
+     margin: 0px;
+
 }
 
 /* .item-content p{
